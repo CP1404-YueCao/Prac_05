@@ -1,6 +1,7 @@
 def main():
     """Creat a dictionary of emails and names"""
     email_and_name = {}
+    email = input("Email: ")
     while email != "":
         name = get_name(email)
         confirmation = input("Is your name {}? (Y/n)".format(name))
