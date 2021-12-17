@@ -8,6 +8,8 @@ def main():
             name = input("Name: ")
         email_and_name[email] = name
         email = input("Email: ")
+    for email, name in email_and_name.items():
+        print(f"{name} ({email})")
 
 
 main()
