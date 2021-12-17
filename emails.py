@@ -12,4 +12,12 @@ def main():
         print(f"{name} ({email})")
 
 
+def get_name(email):
+    """Pick expected name from emails"""
+    pre = email.split('@')[0]
+    parts = pre.split('.')
+    name = " ".join(parts).title()
+    return name
+
+
 main()
